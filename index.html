@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Soni | Zero-to-One Tech Consulting</title>
+    <meta name="description" content="Kavya Soni - Building the technical foundation for startups from Zero to One. Full-stack, Data Science, and AI consulting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-primary: #ededed;
+            --text-secondary: #888888;
+            --accent: #3b82f6; /* Subtle tech blue */
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --font-main: 'Inter', sans-serif;
+            --font-mono: 'Space Mono', monospace;
+            --max-width: 900px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout & Typography */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
+        h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary); }
+        p { color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 1.5rem; }
+        a { color: var(--text-primary); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent); }
+
+        .mono { font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent); }
+
+        /* Navigation */
+        nav {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        .logo { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.03em; }
+        .nav-links a { margin-left: 2rem; font-size: 0.9rem; color: var(--text-secondary); }
+        .nav-links a:hover { color: var(--text-primary); }
+
+        /* Hero Section */
+        .hero { padding: 4rem 0 8rem; border-bottom: 1px solid var(--border); }
+        .hero-tag { 
+            display: inline-block; 
+            padding: 0.25rem 0.75rem; 
+            border: 1px solid var(--border); 
+            border-radius: 100px; 
+            margin-bottom: 1.5rem;
+            background: var(--glass);
+        }
+
+        /* Services Grid */
+        .section { padding: 6rem 0; border-bottom: 1px solid var(--border); }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--text-secondary);
+        }
+        .card h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+        .card p { font-size: 1rem; margin-bottom: 0; }
+
+        /* Skill Tags */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+        .skill-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        /* Contact/CTA */
+        .cta { text-align: center; padding: 8rem 0; }
+        .btn {
+            display: inline-block;
+            background: var(--text-primary);
+            color: var(--bg-color);
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .btn:hover { background: #ffffff; opacity: 0.9; }
+
+        /* Footer */
+        footer { padding: 4rem 0; text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+
+        /* Mobile Tweaks */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            nav { flex-direction: column; gap: 1rem; align-items: flex-start; }
+            .nav-links a { margin-left: 0; margin-right: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Kavya Soni.</div>
+            <div class="nav-links">
+                <a href="#expertise">Expertise</a>
+                <a href="#approach">The 0 $\to$ 1 Approach</a>
+                <a href="mailto:hello@kavyasoni.com">Contact</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <span class="hero-tag mono">System Architect & Technical Founder</span>
+            <h1>Building the technical backbone<br>for the next unicorn.</h1>
+            <p style="max-width: 600px;">
+                I partner with early-stage startups to navigate the chaos of <strong>Zero to One</strong>. 
+                From architecting core data systems to deploying production-ready AI and full-stack applications, 
+                I build scalable foundations that investors trust.
+            </p>
+            <br>
+            <a href="mailto:hello@kavyasoni.com" class="mono">Start a conversation &rarr;</a>
+        </header>
+
+        <section id="expertise" class="section">
+            <div class="mono" style="margin-bottom: 1rem;">// WHAT I DELIVER</div>
+            <h2>Technical precision across the stack.</h2>
+            <p>I don't just write code; I design systems that survive rapid scaling.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Core Engineering</h3>
+                    <p>Robust Backend & Frontend architecture. I build clean, maintainable monoliths that are ready to split into microservices when the time is right.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">React/Next.js</span>
+                        <span class="skill-tag">Node/Go</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Data Systems</h3>
+                    <p>Designing the data pipelines and storage strategies that turn raw user activity into actionable business intelligence from day one.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                        <span class="skill-tag">Analytics</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Applied AI</h3>
+                    <p>Pragmatic integration of LLMs and ML models into product workflows. No hype, just features that drive user retention.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Fine-tuning</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="section">
+            <div class="mono" style="margin-bottom: 1rem;">// PHILOSOPHY</div>
+            <h2>The "Zero to One" Mindset.</h2>
+            <div style="max-width: 700px;">
+                <p>
+                    <strong>Speed without debt.</strong> Most consultants over-engineer. I build for the immediate milestone while leaving the door open for future scale. 
+                </p>
+                <p>
+                    I operate as a fractional CTO or Lead Engineer, sitting directly with founders to translate "vision" into "shippable executable."
+                </p>
+                <ul style="list-style: none; margin-top: 2rem; color: var(--text-secondary);">
+                    <li style="margin-bottom: 0.5rem;">+ Deploy on day one</li>
+                    <li style="margin-bottom: 0.5rem;">+ Automate everything</li>
+                    <li style="margin-bottom: 0.5rem;">+ Radical simplicity</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to build?</h2>
+            <p>Currently accepting 1 high-impact project for Q4.</p>
+            <a href="mailto:hello@kavyasoni.com" class="btn">Get in touch</a>
+        </section>
+
+        <footer>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Kavya Soni. All rights reserved.</p>
+            <p class="mono" style="font-size: 0.8rem; margin-top: 1rem;">Deployed on GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
